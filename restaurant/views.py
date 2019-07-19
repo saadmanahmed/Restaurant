@@ -1,12 +1,13 @@
 from django.shortcuts import render
 from .models import Restaurant
 from .models import Dishes
-from django.views.generic import DetailView,TemplateView
+from django.views.generic import DetailView,TemplateView,ListView
 
 # Create your views here.
-class RestaurantDetail(TemplateView):
+class RestaurantDetail(ListView):
   model = Restaurant
-  template_name = 'restaurant/restaurant_list.html'
+  template_name = 'restaurant/base.html'
+  context_objectname='restaurant_list'
   
 
 
