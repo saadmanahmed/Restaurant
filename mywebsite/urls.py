@@ -19,5 +19,7 @@ from django.conf.urls import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url('restaurant/',include('restaurant.urls'))
+    path('restaurant/',include('restaurant.urls')),
+    path('dishes/',include('restaurant.urls')),
+    
 ]

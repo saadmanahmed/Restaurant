@@ -1,0 +1,18 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<header>
+  <h1>
+ "Welcome to my DISHEZ page suckerz and foodiezzz!"
+</h1>
+<ul>
+    {% for dishes in dishes_list %}
+    <li>{{dishes }}</li>
+    {% endfor %}
+    </ul>
+</header>
+
+</html>
