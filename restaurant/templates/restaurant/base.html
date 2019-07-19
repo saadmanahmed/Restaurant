@@ -1,0 +1,21 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="stylesheet" href="{% static "style/base.css" %}" />
+<title>{% block title %}restaurant by MyRecommentdations.org{% endblock %}</title>
+</head>
+<header>
+  <h1>
+ "Welcome to my restaurant page suckerz and foodiezzz!"
+</h1>
+<p>
+    {% for restaurant in restaurants%}
+      {{restaurant.name}}
+    {% endfor %}
+  </p>
+</header>
+
+</html>
